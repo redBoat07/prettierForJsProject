@@ -218,6 +218,37 @@ To automatically format your code before each commit:
 
 Now, Prettier will automatically format your code before each commit.
 
+## Formatting on Save
+
+To format your code automatically each time you save, you can configure your code editor. Here are instructions for some popular editors:
+
+### Visual Studio Code
+
+1. Install the Prettier extension for VS Code.
+2. Open your VS Code settings (File > Preferences > Settings).
+3. Search for "Format On Save" and check the box to enable it.
+4. Also search for "Default Formatter" and select "Prettier - Code formatter" from the dropdown.
+
+### WebStorm / IntelliJ IDEA
+
+1. Go to Preferences/Settings > Languages & Frameworks > JavaScript > Prettier.
+2. Check the box next to "On code reformat" and "On save".
+3. Select Prettier package: choose your project's node_modules/prettier.
+
+### Sublime Text
+
+1. Install Package Control if you haven't already.
+2. Install the JsPrettier package via Package Control.
+3. Go to Preferences > Package Settings > JsPrettier > Settings.
+4. Add `"auto_format_on_save": true` to your settings.
+
+### Atom
+
+1. Install the prettier-atom package.
+2. In the package settings, check the box next to "Format on Save".
+
+Remember to have the `.prettierrc` file in your project root so that your editor uses your project-specific Prettier configuration.
+
 ## Conclusion
 
 With these setups, you'll have Prettier configured for your React, Next.js, or Node.js projects. This ensures consistent code styling across your project and team. Remember to commit the `.prettierrc`, `.prettierignore`, and `.editorconfig` files to your repository so that all developers use the same configuration.
